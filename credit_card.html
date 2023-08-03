@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/credit_card.css">
+    <title>Módulo 7: Tarjeta de crédito</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Módulo 7: Validar tarjeta de crédito</h1>
+        <p>Introduce la tarjeta de crédito a validar. Para que el formato sea correcto debe cumplir lo siguiente:</p>
+        <ul>
+            <li>Debe empezar con 50, 51, 52, 53, 54, 55</li>
+            <li>Debe contener 16 dígitos</li>
+            <li>Se puede agrupar en conjuntos de 4 dígitos separados por un espacio en blanco o un guión (serán todos obligatorios si se incluye uno)</li>
+        </ul>
+        <div class="input-container">
+            <label for="cardInput">Validar tarjeta de crédito</label>
+            <input type="text" name="cardControl" id="cardInput">
+        </div>
+        <div class="blackboard-container">
+            <label for="blackboard">Extracción de los 4 grupos de dígitos</label>
+            <textarea name="blackBoardControl" id="blackboard" cols="15" rows="4" readonly></textarea>
+        </div>
+    </div>
+    <script src="./js/inputFormatValidationLibrary.js"></script>
+    <script src="./js/credit_card.js"></script>
+</body>
+</html>

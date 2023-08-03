@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/iban.css">
+    <title>Módulo 7: IBAN</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Módulo 7: Validar IBAN</h1>
+        <p>Introduce el IBAN a validar. Para que el formato sea correcto debe cumplir lo siguiente:</p>
+        <ul>
+            <li>Debe empezar con 2 letras que representan el país (se permiten mayúsculas o minúsculas)</li>
+            <li>Debe seguir con 22 dígitos</li>
+            <li>Se puede incluir un espacio entre grupos de 4 caracteres (serán todos obligatorios si se incluye uno)</li>
+        </ul>
+        <div class="input-container">
+            <label for="ibanInput">Validar IBAN</label>
+            <input type="text" name="ibanControl" id="ibanInput">
+        </div>
+        <div class="blackboard-container">
+            <label for="blackboard">Código de país y dígito de control</label>
+            <textarea name="blackBoardControl" id="blackboard" cols="10" rows="1" readonly></textarea>
+        </div>
+    </div>
+    <script src="./js/inputFormatValidationLibrary.js"></script>
+    <script src="./js/iban.js"></script>
+</body>
+</html>

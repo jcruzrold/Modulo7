@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/url.css">
+    <title>Módulo 7: URL</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Módulo 7: Validar URL</h1>
+        <p>Introduce la URL a validar. Para que el formato sea correcto debe cumplir lo siguiente:</p>
+        <ul>
+            <li>Debe empezar con http o https seguido de ://</li>
+            <li>La combinación de la longitud del subdominio y dominio principal debe ser de 2 a 256 caracteres. 
+                Podrán ser caracteres alfanuméricos y/o especiales.</li>
+            <li>El dominio de nivel superior solo podrá contener caracteres alfabéticos y deberá ser de entre 2 y 6 caracteres.</li>
+            <li>La parte final de la URL podrá contener caracteres alfanuméricos y/o especiales. Se podrá repetir cero o más veces.</li>
+        </ul>
+        <div class="input-container">
+            <label for="urlInput">Validar URL</label>
+            <input type="text" name="urlControl" id="urlInput">
+        </div>
+    </div>
+    <script src="./js/inputFormatValidationLibrary.js"></script>
+    <script src="./js/url.js"></script>
+</body>
+</html>

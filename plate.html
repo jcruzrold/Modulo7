@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/plate.css">
+    <title>Módulo 7: Matrícula</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Módulo 7: Validar matrícula</h1>
+        <p>Introduce la matrícula a validar. Para que el formato sea correcto debe cumplir lo siguiente:</p>
+        <ul>
+            <li>Debe contener 4 dígitos</li>
+            <li>Debe seguir con 3 letras (se permiten mayúsculas o minúsculas)</li>
+            <li>Se puede incluir un espacio o un guión entre el grupo de dígitos y letras</li>
+        </ul>
+        <div class="input-container">
+            <label for="plateInput">Validar matrícula</label>
+            <input type="text" name="plateControl" id="plateInput">
+        </div>
+        <div class="blackboard-container">
+            <label for="blackboard">Extracción de dígitos y letras</label>
+            <textarea name="blackBoardControl" id="blackboard" cols="20" rows="2" readonly></textarea>
+        </div>
+    </div>
+    <script src="./js/inputFormatValidationLibrary.js"></script>
+    <script src="./js/plate.js"></script>
+</body>
+</html>
